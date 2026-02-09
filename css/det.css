@@ -32,7 +32,7 @@
         header {
             background: linear-gradient(to right, #5D4037, #3E2723);
             color: #D2B48C;
-            position: fixed;
+            position: absolute;
             width: 100%;
             top: 0;
             z-index: 1000;
@@ -778,13 +778,46 @@
             font-size: 0.9rem;
             color: #a78a7f;
         }
+        @media(max-width: 992px){
+             .search-bar{
+                min-width: 250px;
+            }
+            .navbar{
+                flex-wrap: wrap;
+            }
+            .logo {
+                width: 100%;
+                justify-content: center;
+                order: 1;
+            }
+
+            .search-bar {
+                display: block;
+                max-width: 100%;
+                margin: 15px 0;
+                order: 2;
+            }
+
+            .nav-links {
+                width: auto;
+                margin: 0 auto;
+                order: 3;
+            }
+            .product-detail{
+                margin-top: 100px;
+            }
+           
+        }
         
         @media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
                 gap: 20px;
             }
-            
+            .product-detail{
+                margin-top: 150px;
+            }
+
             nav ul {
                 flex-wrap: wrap;
                 justify-content: center;
