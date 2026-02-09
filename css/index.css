@@ -26,7 +26,7 @@
         header {
             background: linear-gradient(to right, #5D4037, #3E2723);
             color: #D2B48C;
-            position: fixed;
+            position: absolute;
             width: 100%;
             top: 0;
             z-index: 1000;
@@ -171,7 +171,7 @@
 
         /* Hero Slider Styles */
         .hero {
-            margin-top: 80px;
+            margin-top: 150px;
             height: 500px;
             position: relative;
             overflow: hidden;
@@ -589,34 +589,43 @@
             .slide-content {
                 max-width: 70%;
             }
+            .search-bar{
+                min-width: 200px;
+            }
         }
 
         @media (max-width: 768px) {
+
+            .header{
+                position: absolute;
+            }
             .navbar {
                 flex-wrap: wrap;
+                position: static;
             }
 
             .logo {
-                order: 1;
                 width: 100%;
                 justify-content: center;
-                margin-bottom: 15px;
+                order: 1;
             }
 
             .search-bar {
-                order: 3;
+                display: block;
                 max-width: 100%;
                 margin: 15px 0;
+                order: 2;
             }
 
             .nav-links {
-                order: 2;
                 width: auto;
                 margin: 0 auto;
+                order: 3;
             }
 
             .hero {
                 height: 400px;
+                margin-top: 250px;
             }
 
             .slide-content {
@@ -654,5 +663,3 @@
             }
         }
     
-
-
