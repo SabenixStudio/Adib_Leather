@@ -546,6 +546,9 @@
                 margin: 0 auto;
                 order: 3;
             }
+             .hero{
+                margin-top: 180px;
+            }
 
         }
         
@@ -575,4 +578,5 @@
                 font-size: 18px;
             }
         }
+
 
